@@ -137,8 +137,8 @@
     }, {offset: '80%'});
 
 
-    // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
+    // githubstats carousel
+    $(".githubstats-carousel").owlCarousel({
         center: true,
         autoplay: true,
         dots: true,

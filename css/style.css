@@ -4,13 +4,19 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url(/Merienda-VariableFont_wght.ttf);
+    src: url(https://ojutalayomi.github.io/I/Merienda-VariableFont_wght.ttf);
 }
-
+:root{
+    --lightmode: #000;
+    --darkmode: #ffffff;
+    --lbodymode: #ffffff;
+    --dbodymode: #15202b;
+}
 body {
     color: #797979;
-    background: #ffffff;
+    background: var(--lbodymode);
     font-family: myFirstFont;
+    color-scheme: light dark;
 }
 #row{
     flex-direction: row-reverse !important;
@@ -219,7 +225,7 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #ffffff !important;
+        background: var(--lbodymode) !important;
     }
     
     .navbar .navbar-brand {
@@ -257,7 +263,7 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #ffffff !important;
+        background: var(--lbodymode) !important;
     }
     
     .navbar .navbar-brand {
@@ -287,7 +293,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgb(10, 23, 61, .46), rgb(10, 23, 61, .95)), url(/cover.png);
+    background: linear-gradient(rgb(10, 23, 61, .46), rgb(10, 23, 61, .95)), url(https://ojutalayomi.github.io/I/cover.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -471,6 +477,9 @@ a:focus {
     letter-spacing: 1px;
     text-transform: uppercase;
     background: #ffffff;
+}
+.dark{
+    background: #15202b;
 }
 
 .section-header p::before {
@@ -1257,50 +1266,49 @@ a:focus {
 
 
 /*******************************/
-/******* Testimonial CSS *******/
+/******* githubstats CSS *******/
 /*******************************/
-.testimonial {
+.githubstats {
     position: relative;
     margin: 45px 0;
     padding: 90px 0;
     background: #0B173D;
 }
 
-.testimonial .container {
+.githubstats .container {
     max-width: 900px;
 }
 
-.testimonial .testimonial-icon {
+.githubstats .githubstats-icon {
     margin-bottom: 45px;
     text-align: center;
 }
 
-.testimonial .testimonial-icon i {
+.githubstats .githubstats-icon i {
     font-size: 60px;
     color: rgba(256, 256, 256, .5);
 }
 
-.testimonial .testimonial-item {
+.githubstats .githubstats-item {
     position: relative;
     margin: 0 15px;
     text-align: center;
 }
 
-.testimonial .testimonial-img {
+.githubstats .githubstats-img {
     position: relative;
     margin-bottom: 15px;
     z-index: 1;
 }
 
-.testimonial .testimonial-item img {
+.githubstats .githubstats-item img {
     margin: 0 auto;
-    width: 120px;
     padding: 10px;
-    border: 5px dotted #ffffff;
+    border: 5px solid #D1A103;
     border-radius: 100px;
 }
 
-.testimonial .testimonial-text {
+.githubstats .githubstats-text {
     position: relative;
     margin-top: -70px;
     padding: 65px 35px 30px 35px;
@@ -1309,30 +1317,30 @@ a:focus {
     border-radius: 500px;
 }
 
-.testimonial .testimonial-item p {
+.githubstats .githubstats-item p {
     font-size: 18px;
     font-style: italic;
 }
 
-.testimonial .testimonial-text h3 {
+.githubstats .githubstats-text h3 {
     color: #0B173D;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.testimonial .testimonial-text h4 {
+.githubstats .githubstats-text h4 {
     color: #666666;
     font-size: 14px;
     margin-bottom: 0;
 }
 
-.testimonial .owl-dots {
+.githubstats .owl-dots {
     margin-top: 15px;
     text-align: center;
 }
 
-.testimonial .owl-dot {
+.githubstats .owl-dot {
     display: inline-block;
     margin: 0 5px;
     width: 12px;
@@ -1341,7 +1349,7 @@ a:focus {
     background: rgba(256, 256, 256, .5);
 }
 
-.testimonial .owl-dot.active {
+.githubstats .owl-dot.active {
     background: #ffffff;
 }
 
@@ -1357,7 +1365,7 @@ a:focus {
 }
 
 .contact .container-fluid {
-    background: url(/default.svg) left center no-repeat;
+    background: url(https://ojutalayomi.github.io/I/default.svg) left center no-repeat;
     background-size: contain;
 }
 

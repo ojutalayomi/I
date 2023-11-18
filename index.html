@@ -9,14 +9,14 @@
 
         <meta property="og:title" content="My Portfolio">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="/cover.png">
+        <meta property="og:image" content="https://ojutalayomi.github.io/I/cover.png">
         <meta property="og:url" content="https://ayocodex.site">
         <meta property="og:description" content="Welcome to My Portfolio Website">
         <meta property="og:locale" content="en_NG">
         <meta property="og:site_name" content="Ayomide's Portfolio">
 
         <!-- Favicon -->
-        <link href="/default-monochrome.svg" rel="icon">
+        <link href="/default-logo1.svg" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -57,9 +57,15 @@
                         <a href="#experience" class="nav-item nav-link">Experience</a>
                         <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                         <a href="#price" class="nav-item nav-link">Price</a>
-                        <!--<a href="#review" class="nav-item nav-link">Review</a>
-                        <a href="#team" class="nav-item nav-link">Team</a>
-                        <a href="#blog" class="nav-item nav-link">Blog</a>-->
+                        <a href="#review" class="nav-item nav-link">Github</a>
+                        <a href="" class="nav-item nav-link maxi"><!--Light-Dark Mode Toggler-->
+                            <div class="checkbox-wrapper-54" id="min-checkbox">
+                                   <label class="switch">
+                                     <input type="checkbox" id="checkbox">
+                                        <span class="slider"></span>
+                                   </label>
+                           </div></a>
+                        <!--<a href="#blog" class="nav-item nav-link">Blog</a>-->
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -80,9 +86,16 @@
                                 <div class="typed-text">Web Designer, Web Developer, Front End Developer, HTML, CSS and JavaScript</div>
                             </div>
                             <div class="hero-btn">
-                                <a class="btn" href="">Hire Me</a>
-                                <a class="btn" href="">Contact Me</a>
+                                <a class="btn" href="#contact">Hire Me</a>
+                                <a class="btn" href="#contact">Contact Me</a>
                             </div>
+                            <!--Light-Dark Mode Toggler-->
+                                <div class="checkbox-wrapper-54 mini">
+                                       <label class="switch">
+                                         <input type="checkbox" id="checkbox">
+                                            <span class="slider"></span>
+                                       </label>
+                               </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
@@ -90,6 +103,8 @@
                             <img src="img/image.png" style="margin-top: 50px;" alt="Hero Image">
                         </div>
                     </div>
+    </div>
+                           
                 </div>
             </div>
         </div>
@@ -111,7 +126,7 @@
                             <div class="service-text">
                                 <h3>Web Design</h3>
                                 <p>
-                                    My primary duties include conceptualizing and implementing creative ideas for client websites.
+                                    My duties include to conceptualizing and implementing creative ideas for client websites.
                                 </p>
                             </div>
                         </div>
@@ -159,7 +174,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <iframe style="border-radius:12px" src="https://ojutalayomi.github.io/security" width="100%" height="300" loading="lazy"></iframe>
+                                <iframe style="border-radius:12px; border: none;" src="https://ojutalayomi.github.io/security" width="100%" height="300" loading="lazy"></iframe>
                             </div>
                             <div class="portfolio-text">
                                 <h3>Lock Screen Page</h3>
@@ -170,7 +185,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <iframe style="border-radius:12px" src="https://ojutalayomi.github.io/wuramide" width="100%" height="300" loading="lazy"></iframe>
+                                <iframe style="border-radius:12px; border: none;" src="https://ojutalayomi.github.io/wuramide" width="100%" height="300" loading="lazy"></iframe>
                             </div>
                             <div class="portfolio-text">
                                 <h3>Cake Web Page</h3>
@@ -181,7 +196,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <iframe style="border-radius:12px" src="https://ojutalayomi.github.io/Login" width="100%" height="300" loading="lazy"></iframe>
+                                <iframe style="border-radius:12px; border: none;" src="https://ojutalayomi.github.io/Login" width="100%" height="300" loading="lazy"></iframe>
                             </div>
                             <div class="portfolio-text">
                                 <h3>A Simple Login Page</h3>
@@ -230,6 +245,27 @@
         </div>
         <!-- Price End -->
 
+        <!-- Github Stats -->
+        <div class="githubstats wow fadeInUp" data-wow-delay="0.1s" id="review">
+            <div class="container">
+                <div class="githubstats-icon">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="owl-carousel githubstats-carousel">
+                    <div class="githubstats-item">
+                        <img src="https://github-readme-stats.vercel.app/api?username=ojutalayomi&amp;theme=light&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false" alt="" loading="eager">
+                    </div>
+                    <div class="githubstats-item">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=ojutalayomi&amp;theme=light&amp;hide_border=true" alt="" loading="eager">
+                    </div>
+                    <div class="githubstats-item">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ojutalayomi&amp;theme=light&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact" alt="" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Github Stats End-->
+
         <!-- Contact Start -->
         <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
             <div class="container-fluid">
@@ -274,7 +310,7 @@
                 <div class="container">
                     <div class="footer-info">
                         <h2>Ayomide Ojutalayo</h2>
-                        <h3>30, Sanusi Street, Lagos, Nigeria</h3>
+                        <h3>30, Sanusi Street, Somolu, Lagos, Nigeria</h3>
                         <div class="footer-menu">
                             <p>+234 905 651 9477</p>
                             <p>ojutalayomide@ayocodex.site</p>
@@ -301,11 +337,13 @@
         <!-- Back to top button -->
         <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
         
-        
+
         <!-- Pre Loader -->
         <div id="loader" class="show">
             <div class="loader"></div>
         </div>
+
+        <style></style>
 
         
         <!-- JavaScript Libraries -->
