@@ -57,9 +57,9 @@ a.nav-item.nav-link.active {
   `;  
   let san = document.querySelector("style");
   function staT(){
-    stats[4].setAttribute("src","https://github-readme-stats.vercel.app/api?username=ojutalayomi&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false");
-    stats[5].setAttribute("src","https://github-readme-streak-stats.herokuapp.com/?user=ojutalayomi&amp;theme=dark&amp;hide_border=true");
-    stats[6].setAttribute("src","https://github-readme-stats.vercel.app/api/top-langs/?username=ojutalayomi&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact");
+    stats[4].setAttribute("src", "https://github-readme-stats.vercel.app/api?username=ojutalayomi&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false");
+    stats[5].setAttribute("src", "https://github-readme-streak-stats.herokuapp.com/?user=ojutalayomi&amp;theme=dark&amp;hide_border=true");
+    stats[6].setAttribute("src", "https://github-readme-stats.vercel.app/api/top-langs/?username=ojutalayomi&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact");
   }
 
 che[0].addEventListener('click',function (){

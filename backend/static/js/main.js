@@ -138,7 +138,7 @@
 
 
     // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
+    $(".githubstats-carousel").owlCarousel({
         center: true,
         autoplay: true,
         dots: true,
