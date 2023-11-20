@@ -5,6 +5,8 @@
 }
   #min-checkbox{
     right: 0px;
+    padding: 0px;
+    margin: 4px;
     position: relative;
   }
   #min-checkbox label{
@@ -60,10 +62,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f4f4f5;
+    background-color: #ffffff;
     transition: .4s;
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgb(50 50 93 / 11%) 0px 20px 4px 2px inset, rgb(0 0 0 / 10%) 0px 18px 5px 2px inset;
+  }
+
+  @media (max-width: 992px) {
+    .checkbox-wrapper-54 .slider {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
   }
 
   .checkbox-wrapper-54 .slider:before {

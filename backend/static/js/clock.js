@@ -4,53 +4,7 @@ let a = document.querySelectorAll('a');
 let maxi = document.querySelector('.maxi');
 let mini = document.querySelector('.mini');
 let sty = `
-  :root{
-  --darkmode: #000 !important;
-  --lightmode: #ffffff !important;
-  --dbodymode: #ffffff !important;
-  --lbodymode: #15202b !important;
-  }
   
- .navbar-light .navbar-brand {
-  color: #fff;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: rgb(255 255 255) !important;
-}
-a.nav-item.nav-link {
-  color: #ffffff !important;
-}
-a.nav-item.nav-link.active {
-  color: #d1a103 !important;
-}
-.section-header p::before {
-  background: #ffffff !important;
-}
-.section-header p::after {
-  background: #ffffff !important;
-}
-.section-header p {
-  background: #15202b !important;
-}
-.section-header h2 {
-  color: #f2f2f2 !important;
-}
-.service .service-icon {
-  background: #15202b !important;
-}
-.service .service-text h3 {
-  color: #f2f2f2;
-}
-.service .service-text p {
-  color: #f2f2f2;
-}
-.service .service-item:hover {
-  box-shadow: inset 800px 0 0 0 #f2f2f2;
-}
-.service .service-item:hover .service-text h3,
-.service .service-item:hover .service-text p {
-    color: #15202b;
-}
   `;
   let sty1 = `
   
@@ -62,25 +16,45 @@ a.nav-item.nav-link.active {
     stats[6].setAttribute("src", "https://github-readme-stats.vercel.app/api/top-langs/?username=ojutalayomi&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact");
   }
 
+  // Create new link element
+var linkElement = document.createElement('link');
+
+// Set the attributes
+linkElement.href = '/static/darkmode.css';
+linkElement.rel = 'stylesheet';
+
+// Append the link element to the head
+//document.head.appendChild(linkElement);
+
+  // Select the link element
+//var linkElement1 = document.querySelector('link[href="/static/darkmode.css"]');
+
+// Remove the link element
+/**if (linkElement) {
+    linkElement.parentNode.removeChild(linkElement);
+}**/
+
 che[0].addEventListener('click',function (){
   if(che[0].checked == true){
-  san.innerHTML = sty;
-  staT();
+    document.head.appendChild(linkElement);
+    che[1].checked = true
   } else if(che[0].checked == false) {
-    san.innerHTML = "";
+    document.head.removeChild(linkElement);
+    che[1].checked = false;
   }
 })
 
 che[1].addEventListener('click',function (){
   if(che[1].checked == true){
-  san.innerHTML = sty;
-  staT();
+    document.head.appendChild(linkElement);
+    che[0].checked = true
   } else if(che[1].checked == false) {
-    san.innerHTML = "";
+    document.head.removeChild(linkElement);
+    che[0].checked = false;
   }
 })
 setInterval(() => {
-if(window.screen.width < 1063){
+if(window.screen.width < 992){
   maxi.style.display = "none";
   mini.style.display ="block";
 } else {
